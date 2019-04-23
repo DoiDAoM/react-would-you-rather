@@ -1,3 +1,6 @@
+# Would You Rather Project
+This project has been developed for Udacity React Nanodegree program. You can answer simple questions and answer other people's questions in this project.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
