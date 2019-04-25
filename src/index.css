@@ -185,3 +185,7 @@ li {
   border: 20px solid red;
   
 }
+
+.error-text {
+  font-size: 128px;
+}

@@ -4,6 +4,7 @@ import { Card, Row, Col } from 'react-bootstrap'
 import Selection from './Selection'
 import Results from './Results'
 import { handleSaveAnswer } from '../actions/shared'
+import Page404 from './errors/Page404'
 
 class Poll extends Component {
     onSubmit = (selectedOption) => {
@@ -15,6 +16,13 @@ class Poll extends Component {
 
     render() {
         const { question, author, isAnswered, answer, optionOneCount, optionTwoCount} = this.props
+
+        if (question === undefined) {
+            return (
+            <div> 
+                <Page404/>
+            </div>)
+        }
 
         return (
             <div> 
@@ -57,6 +65,11 @@ class Poll extends Component {
 function mapStateToProps ({ questions, users, authedUser }, props) {
     const { id } = props.match.params
     const question = questions[id]
+
+    if (question === undefined) {
+        return ({ question })
+    }
+
     const user = users[authedUser]
     const author = users[question.author]
     let optionOneCount, optionTwoCount
