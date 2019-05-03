@@ -45,7 +45,7 @@ class NewQuestion extends Component {
         return (
             <div>
                 <Card className='tweet'>
-                    <h3 className='center'>Create New Question</h3>
+                    <h3 className='text-center'>Create New Question</h3>
                         <Card className='tweet'>
                           
                             <div> Complete the question: </div>
@@ -57,7 +57,7 @@ class NewQuestion extends Component {
                                     onChange={this.handleOptionOneChange}
                                     className='textarea'
                                 />
-                                <h3 className='center'>OR</h3>
+                                <h3 className='text-center'>OR</h3>
                                 <textarea
                                     placeholder="Enter Option Two Text Here"
                                     value={optionTwoText}

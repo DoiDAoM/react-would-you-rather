@@ -20,7 +20,7 @@ class App extends Component {
 
     if (!isAuthed) {
       return (
-        <div>
+        <div className='container'>
           <Login/>
         </div>
       )
@@ -30,7 +30,7 @@ class App extends Component {
         <Fragment>
           <LoadingBar />
           <Nav/>
-          <div>
+          <div className='container'>
             <Route path='/' exact component={Home} />
             <Route path='/add' exact component={NewQuestion} />
             <Route path='/leaderboard' exact component={LeaderBoard} />

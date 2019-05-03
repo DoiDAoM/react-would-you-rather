@@ -49,7 +49,7 @@ class LeaderBoardItem extends Component {
 
                         <Col md={2}>
                      
-                            <h4 className='center'> Score </h4> 
+                            <h4 className='text-center'> Score </h4> 
                         
                             <div className="center"> {totalCount} </div>
                            

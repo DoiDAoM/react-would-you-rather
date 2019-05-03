@@ -26,16 +26,22 @@ class Login extends Component {
 
     render() {
         return (
-            <div className='center'> 
-                <Card style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Welcome to the Would You Rather App!</Card.Title>
-                        <Card.Text>
-                            Please sign in to continue.
-                        </Card.Text>
-                        <LoginDropdown onUserSelect={this.onUserSelect} selectedUser={this.state.selectedUserId}/>
-                        <Button variant="primary" onClick={this.onSubmit}>Sign in</Button>
-                    </Card.Body>
+            
+            <div className='justify-content-md-center'>
+                <Card style={{ width: 'inherit' }} className='justify-content-md-center' >
+               
+                        <div className='gray-background'>
+                            <Card.Title>Welcome to the Would You Rather App!</Card.Title>
+                            <Card.Text className='text-center'>
+                                Please sign in to continue.
+                            </Card.Text>
+                        </div>
+                        <div style={{ margin: '20px'}} >
+                            <h3 className='text-center green-color'> Sign in </h3>
+                            <LoginDropdown  style={{ width: '100%'}} onUserSelect={this.onUserSelect} selectedUser={this.state.selectedUserId}/>
+                            <Button variant="success" style={{ width: '100%'}} onClick={this.onSubmit}>Sign in</Button>
+                        </div>
+ 
                 </Card>
             </div>
         )
