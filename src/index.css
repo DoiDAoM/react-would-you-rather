@@ -13,6 +13,7 @@ a {
 .container {
   display: flex;
   margin: 0 auto;
+  max-width: 100%!important;
   padding: 10px;
   justify-content: center;
 }
@@ -213,3 +214,15 @@ li {
 .green-color {
   color: #28a745;
 } 
+
+.full-width {
+  width: 100%!important;
+}
+
+.wrap-content {
+  width: inherit;
+}
+
+.dropdown-menu {
+  min-width: 100%;
+}

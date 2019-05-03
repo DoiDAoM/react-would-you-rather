@@ -34,8 +34,7 @@ class Home extends Component {
         })
 
         return (
-            <div> 
-            
+            <div className='full-width'> 
                <Tabs defaultActiveKey="unanswered" onSelect = {this.onSelect} className="justify-content-md-center">
                     <Tab eventKey="unanswered" title="Unanswered Questions">
                     </Tab>

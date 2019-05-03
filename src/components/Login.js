@@ -28,7 +28,7 @@ class Login extends Component {
         return (
             
             <div className='justify-content-md-center'>
-                <Card style={{ width: 'inherit' }} className='justify-content-md-center' >
+                <Card className='justify-content-md-center wrap-content' >
                
                         <div className='gray-background'>
                             <Card.Title>Welcome to the Would You Rather App!</Card.Title>
@@ -38,8 +38,8 @@ class Login extends Component {
                         </div>
                         <div style={{ margin: '20px'}} >
                             <h3 className='text-center green-color'> Sign in </h3>
-                            <LoginDropdown  style={{ width: '100%'}} onUserSelect={this.onUserSelect} selectedUser={this.state.selectedUserId}/>
-                            <Button variant="success" style={{ width: '100%'}} onClick={this.onSubmit}>Sign in</Button>
+                            <LoginDropdown  className='full-width' onUserSelect={this.onUserSelect} selectedUser={this.state.selectedUserId}/>
+                            <Button className='full-width'  variant="success" onClick={this.onSubmit}>Sign in</Button>
                         </div>
  
                 </Card>
